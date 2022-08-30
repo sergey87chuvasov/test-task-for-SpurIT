@@ -1,16 +1,20 @@
-/* Я комментарий, который ждал тебя здесь. Удали меня и напиши хороший код! */
+const collBtn = document.querySelector('.collapsible__button');
 
-var collapsibleRotating = [{ opacity: 0 }, { opacity: 1 }];
+collBtn.addEventListener('click', hideFunc);
 
-let btn = document.querySelector('.collapsible__button');
+function hideFunc() {
+  const aliceTumbling = [
+    { transform: 'translateY(0)' },
+    { transform: 'translateY(-480%)' },
+  ];
 
-btn.addEventListener('click', funkHide);
+  let collTiming = {
+    duration: 1000,
+  };
 
-let collTiming = {
-  duration: 1000,
-  iterations: Infinity,
-};
+  document
+    .querySelector('.collapsible__content')
+    .animate(aliceTumbling, collTiming);
+}
 
-var collapsibleAnimation = document
-  .querySelector('.collapsible__content')
-  .animate(collapsibleRotating, collTiming);
+hideFunc();

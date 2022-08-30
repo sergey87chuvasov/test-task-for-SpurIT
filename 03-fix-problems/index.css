@@ -16,21 +16,9 @@ article > :first-child + :not(:last-child) {
   font-family: serif;
 }
 
-article[class='article']:not(article[class='article']) figure {
-  margin-top: 16px;
-  margin-right: 94px;
-  margin-bottom: 154px;
-  margin-left: 51px;
-  margin: 144px;
-}
-
 [class='article'] > h1 {
   margin: 0 0 24px 0;
   color: palevioletred;
-}
-
-figure {
-  margin: 16px 0;
 }
 
 .figure__image {
