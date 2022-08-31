@@ -30,8 +30,11 @@ body {
   font-size: 48px;
   line-height: 72px;
   color: #000000;
-  margin-bottom: 40px;
   text-align: center;
+}
+
+.good__title {
+  margin-bottom: 40px;
 }
 
 .goods__items {
@@ -40,15 +43,15 @@ body {
   gap: 20px;
 }
 
-.good__item {
+.goods__item {
   position: relative;
 }
 
-.good__item-img {
+.goods__item-img {
   object-fit: cover;
 }
 
-.good__item-box {
+.goods__item-box {
   background: #ffffff;
   border-radius: 12px;
   padding: 24px;
@@ -81,7 +84,7 @@ body {
   cursor: pointer;
 }
 
-.good__item-info {
+.goods__item-info {
   display: flex;
   position: absolute;
   top: 16px;
