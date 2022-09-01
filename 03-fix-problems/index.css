@@ -25,17 +25,12 @@ article > :first-child + :not(:last-child) {
   position: relative;
   left: 4214px;
   max-width: 100%;
-  transform: translateX(-4214px) rotate(720deg);
+  transform: translateX(-4214px);
 }
 
-figure > img,
 figure > img ~ * {
   margin: 8px 0 0;
   font-style: italic;
-}
-
-figure > img:first-child {
-  margin-top: 0;
 }
 
 .article {
